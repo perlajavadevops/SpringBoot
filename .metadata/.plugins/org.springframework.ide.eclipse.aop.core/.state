@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringSDICustomObjects"/>
+<aop-project name="employee-service"/>
+<aop-project name="SpringSDICollections"/>
+<aop-project name="SpringCDICustomObjects"/>
+<aop-project name="SpringScopes"/>
+<aop-project name="SpringSDI1"/>
+<aop-project name="SpringBootWithJQuery"/>
+<aop-project name="demo"/>
+<aop-project name="SpringCDICollections"/>
+<aop-project name="SpringBeanLifeCycle"/>
+<aop-project name="SpringCDI1"/>
+<aop-project name="SpringAutoWiringDemo"/>
+</aop-reference-model>

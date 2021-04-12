@@ -1,0 +1,15 @@
+package com.example.demo.dto;
+
+public class IOTData {
+
+	private String tvoc;
+	private String date;
+	private String pm25;
+	private String healthIndex;
+	private String co2;
+	private String temperature;
+	private String pm10;
+	private String humidity;
+
+	
+}

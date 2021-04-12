@@ -1,0 +1,30 @@
+package com.pgr.SpringBootWithJQuery;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmployeeService {
+
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	public List<Employee> getCompanyList() {
+		return employeeRepository.findAll();
+	}
+
+	public Employee getCompanyById(Integer id) {
+		return employeeRepository.findById(id).get();
+	}
+
+	public void saveOrUpdateCompany(Employee employee) {
+		employeeRepository.save(employee);
+	}
+
+	public void deleteCompany(Integer id) {
+		employeeRepository.deleteById(id);
+	}
+
+}

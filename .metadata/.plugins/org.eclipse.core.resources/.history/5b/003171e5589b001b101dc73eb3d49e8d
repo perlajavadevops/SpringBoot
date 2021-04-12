@@ -1,0 +1,31 @@
+package com.pgr.SpringBootWithJQuery.dto;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@EqualsAndHashCode
+@ToString
+public class Employee {
+
+	private Integer id;
+
+	private String name;
+
+	private String firstName;
+
+	private String lastName;
+
+	private String email;
+
+	private String phone;
+
+	private Double salary;
+
+	private Boolean status;
+
+}
+

@@ -1,0 +1,5 @@
+package com.pgr.SpringBootWithJQuery.dto;
+
+public class Employee {
+
+}

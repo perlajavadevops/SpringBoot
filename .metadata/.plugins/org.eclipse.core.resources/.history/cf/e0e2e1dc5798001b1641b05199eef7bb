@@ -1,0 +1,21 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.dto.IOTData;
+
+@Service
+public class DemoService {
+
+	public IOTData getIOTData(){
+		IOTData iotData = new IOTData();
+		iotData.setCo2("480.00");
+		iotData.setDate("05-04-2021 12:02:20 +0530");
+		iotData.setHealthIndex("80.00");
+		iotData.setHumidity("68.00");
+		iotData.setPm10("2.80");
+		iotData.setTemperature("26.00");
+		iotData.setPm25("12.80");
+		iotData.setTvoc("10.00");
+	}
+}
