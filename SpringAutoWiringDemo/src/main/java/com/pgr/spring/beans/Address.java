@@ -1,5 +1,8 @@
 package com.pgr.spring.beans;
 
+import org.springframework.context.annotation.Scope;
+
+@Scope(scopeName="prototype")
 public class Address {
 
 	private int addressId;

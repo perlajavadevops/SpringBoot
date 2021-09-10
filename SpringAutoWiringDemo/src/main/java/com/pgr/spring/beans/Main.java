@@ -10,8 +10,8 @@ public class Main {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Employee emp2 = (Employee) context.getBean("employee");
-		//emp2.displayEmployee();
-		Employee emp3 = (Employee) context.getBean("employee");
+		emp2.displayEmployee();
+		/*Employee emp3 = (Employee) context.getBean("employee");
 		//emp3.displayEmployee();
 		
 		System.out.println("==========Scopes Demo for emp2 started==========");
@@ -23,7 +23,7 @@ public class Main {
 		System.out.println("Employee hashCode:: == "+emp3.hashCode());
 		System.out.println("Address hashCode:: == "+emp3.getAddress().hashCode());
 		System.out.println("==========Scopes Demo for emp2 ended==========");
-		
+		*/
 		((ConfigurableApplicationContext)context).close();
 
 	}

@@ -1,6 +1,9 @@
 package com.pgr.spring.beans;
 
-public class Address {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Address implements InitializingBean, DisposableBean{
 
 	private int addressId;
 	private int pinCode;
@@ -43,6 +46,17 @@ public class Address {
 	public String toString() {
 		return "Address [addressId=" + addressId + ", pinCode=" + pinCode + ", city=" + city + ", country=" + country
 				+ "]";
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("Address is destroyed...");
+		
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("Address class object is created....");
 	}
 
 }

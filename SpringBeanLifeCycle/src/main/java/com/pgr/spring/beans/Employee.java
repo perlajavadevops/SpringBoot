@@ -1,5 +1,8 @@
 package com.pgr.spring.beans;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class Employee{
 
 	private int empId;
@@ -37,11 +40,13 @@ public class Employee{
 		System.out.println(address);
 	}
 
+	//@PreDestroy
 	public void employeeDestroy()  {
 		System.out.println("Employee Closing");
 		
 	}
 
+	//@PostConstruct
 	public void  employeeInit() {
 		System.out.println("Employee initializing");
 	}

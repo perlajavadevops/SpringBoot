@@ -1,12 +1,16 @@
 package com.pgr.spring.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
 
 public class Employee{
 
 	private int empId;
 	private String name;
 	
+	//@Autowired
+	/*@Qualifier(value="address2")*/
 	@Autowired
 	private Address address;
 
@@ -26,6 +30,7 @@ public class Employee{
 		this.name = name;
 	}
 
+	@Required
 	public Address getAddress() {
 		return address;
 	}

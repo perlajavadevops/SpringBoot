@@ -26,9 +26,17 @@
 		<property value="Bangalore" name="city"></property>
 		<property value="India" name="country"></property>
 	</bean>
+	
+	<!-- <bean id="address2" class="com.pgr.spring.beans.Address">
+		<property value="2" name="addressId"></property>
+		<property value="5666666" name="pinCode"></property>
+		<property value="Hyd" name="city"></property>
+		<property value="USA" name="country"></property>
+	</bean> -->
+	
 	<bean id="employee" class="com.pgr.spring.beans.Employee">
 		<property value="101" name="empId"></property>
 		<property value="PerlaReddy" name="name"></property>
-		<!-- <property ref="address" name="address"></property> -->
+	<!-- 	<property ref="address" name="address"></property> -->
 	</bean>
 </beans>
